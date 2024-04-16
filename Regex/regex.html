@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regex</title>
+</head>
+<style>
+    input:valid{
+        background-color: rgb(171, 245, 60);
+    }
+    input:invalid{
+        background-color: red;
+    }
+    input{
+        width: 300px;
+        height: 200px;
+        font-size: x-large;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+</style>
+<body>
+    <input type="text" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}[^\w\s]">
+</body>
+</html>
